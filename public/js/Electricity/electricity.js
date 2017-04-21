@@ -1,4 +1,6 @@
 
+// Cambio de prueba
+
 _electricity = function () {};
 
 _electricity.prototype.onlyNumber = function (identificador) {
