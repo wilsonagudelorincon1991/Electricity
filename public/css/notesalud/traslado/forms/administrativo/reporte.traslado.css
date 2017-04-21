@@ -1,0 +1,48 @@
+
+@font-face {
+  font-family: 'Report Traslado';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../css/font/open-sans-regular.ttf") format("ttf");
+}
+
+.report {
+    width: 612px; }
+
+.report-row {
+    width: 100%;
+    display: inline-flex; }
+
+.report-column {
+    width: 100%; 
+    border : 1px solid #000; }
+
+.report-column.pto-20 {
+    width: 20%; }
+
+.report-column.pto-25 {
+    width: 25%; }
+
+.report-column.pto-30 {
+    width: 30%; }
+
+.report-column.pto-35 {
+    width: 35%; }
+
+.report-column.pto-40 {
+    width: 40%; }
+
+.report-column.pto-50 {
+    width: 50%; }
+
+.report-column.pto-75 {
+    width: 75%; }
+
+.report-column p {
+    font-family: 'Report Traslado';
+    text-align: center;
+    padding: 3px !important; }
+
+.report-column img {
+    width: 100%;
+    padding: 3px 10px; }

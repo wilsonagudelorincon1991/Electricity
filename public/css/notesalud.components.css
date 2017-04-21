@@ -1,0 +1,47 @@
+/*!
+ * NoteSalud Mobile v0.1.1 
+ * Copyright 2014-2015 Softtion 
+ */
+
+.notesalud.title, .notesalud.subtitle {
+    padding: 5px;
+    text-align: center;
+}
+
+.notesalud.subtitle {
+    font-size: 1.32rem;
+    color: gray;
+}
+
+.notesalud.title > span {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/** Estilos para listas Collapsibles **/
+
+.notesalud > .collapsible-header {
+    background-color: #42a5f5;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.notesalud > .collapsible-header > i {
+    font-size: 1.4rem;
+}
+
+.notesalud > .collapsible-header > span {
+    margin-right: 5px;
+}
+
+.notesalud > .collapsible-body > .input-field {
+    margin: 5px;
+}
+
+.notesalud > .collapsible-body textarea {
+    line-height: 1.8rem;
+    padding: 0px;
+    border-bottom: none;
+    padding-bottom: 5px;
+}

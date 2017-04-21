@@ -1,0 +1,514 @@
+/*!
+ * Softtion Material v0.1.1 
+ * Copyright 2014-2015 Softtion 
+ */
+
+/** Pantallas pequeñas : width < 361px */
+/** Pantallas medianas : width > 360px y width < 641px */
+/** Pantallas grandes : width > 640px y width < 994px */
+/** Pantallas muy grandes : width > 993px */
+
+html {
+    font-size: 12px;
+}
+
+.materialize-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+header > nav {
+    padding: 0px 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hidden-s, .hidden-d, .hidden-m, .hidden-l {
+    display: block !important;
+}
+
+.view-s, .view-d, .view-m, .view-l {
+    display: none !important;
+}
+
+@media only screen and (max-width : 360px) {
+    .hidden-s {
+        display: none !important;
+    }
+    
+    .view-s {
+        display: block !important;
+    }
+} /** Pantallas pequeñas */
+
+@media only screen and (min-width : 361px) {
+    
+    .hidden-d {
+        display: none !important;
+    }
+    
+    .view-d {
+        display: block !important;
+    }
+    
+    th.view-d, td.view-d {
+        display: table-cell !important;
+    }
+} /** Pantallas medianas */
+
+@media only screen and (min-width : 641px) {
+    
+    .hidden-m {
+        display: none !important;
+    }
+    
+    .view-m {
+        display: block !important;
+    }
+    
+    th.view-m, td.view-m {
+        display: table-cell !important;
+    }
+} /** Pantallas grandes */
+
+@media only screen and (min-width : 993px) {
+    
+    .hidden-l {
+        display: none !important;
+    }
+    
+    .view-l {
+        display: block !important;
+    }
+    
+    th.view-l, td.view-l {
+        display: table-cell !important;
+    }
+} /** Pantalla muy grandes */
+
+.disabled {
+    pointer-events : none !important;
+    opacity : 0.4;
+}
+
+.read-only {
+    pointer-events : none !important;
+}
+
+/** Separadores **/
+
+.separator-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.separator-bottom-10 {
+    margin-bottom: 10px;
+}
+
+/** Inputs **/
+
+.input-field.col label {
+    width: 90%;
+}
+
+/** Botones */
+
+a.btn-flat > i {
+    margin-right: 5px;
+}
+
+.search > button {
+    margin-top: 24px;
+}
+
+/** Contenedores */
+
+.modal-content > p {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.toast.rounded > p {
+    text-align: justify;
+}
+
+/** Componentes autocompletar */
+
+.autocomplete-suggestions {
+    text-align: left; 
+    cursor: default; 
+    border: 1px solid #ccc; 
+    border-top: 0; 
+    background: #fff; 
+    box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    /* core styles should not be changed */
+    position: absolute; 
+    display: none; 
+    max-height: 254px; 
+    overflow: hidden; 
+    overflow-y: auto; 
+    box-sizing: border-box;
+}
+
+.autocomplete-suggestion { 
+    position: relative; 
+    padding: 10px; 
+    line-height: 23px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    color: #333; 
+}
+
+.autocomplete-suggestion b { 
+    font-weight: normal; 
+    color: #9e9e9e;
+}
+
+.autocomplete-suggestion.selected { 
+    background: #f0f0f0; 
+}
+
+/** ETIQUETAS Y CLASES AJUSTARAN DEPENDIENDO DEL ANCHO */
+
+/** Pantañas pequeñas */
+
+.btn {
+    padding: 0px 10px;
+}
+
+.collapsible-header {
+    padding: 0px 5px;
+}
+
+.collapsible.popout > li {
+    margin: 0px 10px;
+}
+
+.collection .collection-item {
+    padding: 10px 10px;
+}
+
+.collection-item.avatar > i.icon {
+    position: absolute;
+    overflow: hidden;
+    left: 10px;
+    line-height: normal;
+    font-size: 42px;
+    color : #bdbdbd;
+}
+
+.collection-item.avatar > i.icon.success {
+    color : #66bb6a;
+}
+
+.collection-item.avatar > i.icon.error {
+    color : #ef5350;
+}    
+
+.modal .modal-content {
+    padding: 15px 15px;
+}
+
+/** Estilo para componentes de ModalProcess */
+
+.modal.process {
+    padding: 0px 0px 15px 0px;
+    box-shadow: 0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12);
+}
+
+.modal.process ul, .modal.process li {
+    border: none;
+}
+
+/** Inputs */
+
+.input-error {
+    font-size: 0.8rem; 
+    position: absolute; 
+    bottom: 0; 
+    color: #f44336;
+    width: calc(100% - 0.75rem);
+}
+
+.input-content {
+    position: relative;
+    height: 72px;
+    padding: 5px 10px 0px 10px;
+    margin-bottom: 0.25rem;
+}
+
+.input-content .input-content-title {
+    width: auto;
+    height: 1.5rem;
+    color: #26a69a;
+    background-color: #ffffff;
+    position: absolute;
+    top : 0;
+}
+
+.input-content .input-content-title span {
+    text-align: left;
+    padding-right: 5px;
+}
+
+.input-content .input-content-body {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 26px);
+    border: none !important;
+    margin-top: 0px;
+}
+
+.input-content input[type=text],
+.input-content input[type=number] {
+    width: calc(100% - 55px);
+    height: 2rem;
+    border-bottom: 2px solid #26a69a;
+    background-color: #ffffff;
+    color: #212121;
+    text-align: right;
+    margin: 0px;
+    padding-right: 5px; 
+    margin-top: 1.2rem;
+}
+
+.input-content input[type=text].date {
+    width: calc(100% - 50px);
+    text-align: left;
+    padding-right: 0px; 
+}
+
+.input-content input[type=text].invalid,
+.input-content input[type=number].invalid {
+    border-bottom: 2px solid #ef5350;
+    box-shadow: none;
+}
+
+.input-content input[type=text]:focus,
+.input-content input[type=text].invalid:focus,
+.input-content input[type=number]:focus,
+.input-content input[type=number].invalid:focus {
+    border-bottom: 2px solid #42a5f5;
+    box-shadow: none;
+}
+
+.input-content > .input-error {
+    bottom: 0;
+    color : #ef5350 !important;
+}
+
+.input-content .input-content-describe {
+    position: relative;
+    display: inline;
+    float: right;
+    width: 50px;
+    height: calc(2rem + 2px);
+    background-color: #26a69a;
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.input-content .input-content-describe > i {
+    font-size: 1.2rem;
+}
+
+.input-content input[type=text].invalid ~ .input-content-describe,
+.input-content input[type=number].invalid ~ .input-content-describe {
+    background-color: #ef5350; 
+}
+
+.input-content input[type=text].invalid ~ .input-content-title,
+.input-content input[type=number].invalid ~ .input-content-title {
+    color: #ef5350; 
+}
+
+.input-content input[type=text]:focus ~ .input-content-describe,
+.input-content input[type=number]:focus ~ .input-content-describe {
+    background-color: #42a5f5; 
+}
+
+.input-content input[type=text]:focus ~ .input-content-title,
+.input-content input[type=number]:focus ~ .input-content-title {
+    color: #42a5f5; 
+}
+
+/** Barra de navegación */
+
+nav > .btn-main {
+    height: inherit;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 10px;
+    line-height: 48px; }
+
+@media only screen and (min-width : 601px) {
+    nav > .btn-main {
+        line-height: 56px; } 
+}
+
+.button-collapse {
+    cursor: pointer;
+}
+
+/** Container */
+
+.row.container {
+    margin-top: 48px;
+}
+
+@media only screen and (min-width : 601px) {
+    .row.container {
+        margin-top: 56px;
+    }
+}
+
+@media only screen and (min-width : 993px) {
+    .row.container {
+        margin-bottom: 10px;
+        padding-left: 240px;
+    }
+}
+
+/** Componentes de un div */
+
+.header {
+    display: inline-block;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    padding: 0px 10px; 
+    background-color: #01579b; }
+
+.header > .icon {
+    height: 56px;
+    width: auto;
+    line-height: 56px; 
+    cursor: pointer; }
+
+.header > .icon > i {
+    color: #fff; }
+
+.header > .icon.left {
+    margin-right: 8px; }
+
+.header > .icon.right {
+    margin-left: 8px; }
+
+.header > .title {
+    line-height: 56px;
+    width: auto; 
+    font-size: 1.5rem;
+    color: #fff; }
+
+@media only screen and (max-width : 600px) {
+    .header {
+        height: 48px;
+        line-height: 48px; }
+    
+    .header > .icon {
+        height: 48px;
+        line-height: 48px; }
+    
+    .header > .title {
+        line-height: 48px; }
+}
+
+/** Card */
+
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 2px;
+    padding: 1.5rem 1.33rem 1rem 1.33rem;
+    z-index: 2;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12);
+}
+
+.card > .header {
+    height: auto;
+    margin-bottom: 0.25rem;
+    background-color: #fff;
+    padding: 0px;
+}
+
+.card > .header > .title {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    color: #000; 
+    font-size: 1.5rem;
+}
+
+.card > .content {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.card > .footer {
+    padding: 0.5rem;
+}
+
+.card > .footer > .btn-group {
+    overflow: hidden;
+}
+
+.card > .footer > .btn-group > .btn, 
+.card > .footer > .btn-group > .btn-flat {
+    margin-left: 0.5rem;
+    float: right;
+}
+
+/** Pantallas medianas */
+
+@media only screen and (min-width : 361px) {
+    
+    .collapsible-header {
+        padding: 0px 10px;
+    }
+    
+    .btn {
+        padding: 0px 15px;
+    }
+    
+    .modal .modal-content {
+        padding: 10px 15px;
+    }
+}
+
+/** Pantallas grandes */
+
+@media only screen and (min-width : 641px) {
+    
+    .collapsible.popout > li {
+        margin: 0px 25px;
+    }
+    
+    .modal .modal-content {
+        padding: 15px 20px;
+    }
+}
+
+/** Pantalla muy grandes */
+
+@media only screen and (min-width : 993px) {
+    
+    .navbar-fixed {
+        padding-left: 260px;
+    }
+}

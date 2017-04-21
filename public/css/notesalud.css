@@ -1,0 +1,317 @@
+/*
+ * NoteSalud Web v0.1.1 
+ * Copyright 2014-2015 Softtion 
+ */
+
+@import url('animate.css');
+@import url('font-awesome.css');
+@import url('softtion.material.css');
+@import url('softtion.material.override.css');
+@import url('notesalud.components.css');
+
+.stroke {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0.1px black;
+    font-weight: bold;
+}
+
+html {
+    background: white !important;
+    padding: 0px !important;
+}
+
+.in-line {
+    display: inline !important;
+}
+
+.both {
+    clear: both;
+}   
+
+.btn {
+    margin-bottom: 5px !important;
+}
+
+@media only screen and (min-width : 641px) {
+
+    #card-access-control {
+        margin-top: 20px !important;
+    }
+}
+
+/** Estilo para la pantalla de error del Servidor */
+
+.error-server-500 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.error-server-500 .title {
+    padding: 10px 5px;
+    font: 20px Georgia, "Times New Roman", Times, serif;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 10px;
+}
+
+.select-wrapper input.select-dropdown {
+    border-bottom: 2px solid #4caf50;
+}
+
+.error-server-500 .title > i {
+    cursor: pointer;
+}
+
+#sf-resetcontent {
+    width: 100% !important;
+}
+
+#error-server-content {
+    padding: 5px;
+}
+
+@media only screen and (min-width : 361px) {
+    .error-server-500 .title {
+        padding: 15px 15px;
+        margin: 5px 15px;  
+    }
+    
+    #error-server-content {
+        padding: 15px;
+    }
+}
+
+/** Estilo Asinació de Servicios de coordinación */
+
+.collapsible-header .triage > p {
+    line-height: 20px;
+}
+
+.collapsible-header .triage > p > i {
+    margin-left: 3px;
+    width: inherit;
+    line-height: inherit;
+    font-size: 14px;
+}
+
+.btn-group-servicio .btn-flat {
+    padding: 0px 10px;
+}
+
+.btn-flat {
+    font-weight: 800; }
+
+/** Estilo para lista de Servicios */
+
+.triage {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.btn-group-servicio {
+    margin-top: 10px !important;
+}
+
+/** Estilo para lista de Móviles */
+
+#lst-servicios .select-servicio, #lst-moviles > li,
+#lst-servicios .cancel-servicio {
+    cursor: pointer;
+}
+
+.movil-connect {
+    display: inline;
+    float: right;
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.movil-connect.offline {
+    background-color: #b9151b;
+}
+
+.movil-connect.online {
+    background-color: #388e3c;
+} 
+
+.waves-effect.waves-blue .waves-ripple {
+    background-color: rgba(3, 155, 229, 0.65);
+}
+
+.slt-mounts-datapicker {
+    display: inline !important;
+    width: 50% !important;
+    height: 2.5rem;
+    border: none;
+    font-size: 1em;
+}
+
+.slt-mounts-datapicker:focus {
+    border-bottom: 2px solid #26a69a !important;
+    box-shadow: none !important;
+}
+
+.txt-years-datapicker {
+    display: inline !important;
+    width: 30% !important;
+    font-size: 1em !important;
+    border: none !important;
+    text-align: right;
+}
+
+.txt-years-datapicker:focus {
+    border-bottom: 2px solid #01579b !important;
+    box-shadow: none !important;
+} 
+
+.tabs .indicator {
+    background-color:  #4db6ac !important;
+}
+
+.tabs .tab a {
+    color: #4db6ac !important;
+}
+
+.pagination li.active {
+    border-bottom: 2px solid #4db6ac !important;
+    background-color: #ffffff !important;
+}
+
+.pagination li.active a {
+    color: #4db6ac !important;
+}
+
+.collapsible-body {
+    padding: 10px;
+}
+
+.collapsible-header .badge {
+    margin-right: 12px;
+}
+
+.titulo-servicio .badge {
+    position: relative;
+    height: auto;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: inherit;
+    right: 0 !important;
+    padding: 0 6px !important;
+    margin: 0 !important;
+}
+
+.collapsible-body > ul.collection {
+    margin-bottom: 7px;
+}
+
+.collapsible-body .collection .collection-item p {
+    padding: 0 !important;
+}
+
+.collapsible-body p {
+    padding: 0 !important;
+}
+
+/** Barra de navegación de NoteSalud+ */
+
+.side-nav li.menu.active {
+    background-color: #64b5f6; 
+}
+
+.side-nav li.menu:hover {
+    background-color: #90caf9; 
+}
+
+.side-nav .collapsible-body li.submenu {
+    cursor: pointer;
+    background-color: #e3f2fd;
+}
+
+.side-nav .collapsible-body li.submenu:hover {
+    background-color: #bbdefb;
+}
+
+#sidenav-overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/** Clases para acomodar logos en los labels */
+
+.input-field > label > i {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.input-field > label.active > i {
+    font-size: 17px;
+}
+
+.select-wrapper + label > i {
+    font-size: 17px;
+}
+
+li.collection-item:focus{
+    background-color: #03a9f4 !important;
+    color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.side-nav > .logo {
+    background: url('../images/background-menu.svg');
+    background-size: auto 100%;
+}
+
+.card.notesalud .header .title {
+    margin-left: 0.5rem;
+}
+
+ul.notesalud > li.collection-item {
+    cursor: pointer;
+}
+
+p.datetime > i {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 60px;
+}
+
+/** Estilo de la clase notesalud */
+
+.notesalud > .container {
+    padding: 10px 20px;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+  background: transparent;
+}
+::-webkit-scrollbar-button{
+  width:0px;
+  height: 0px;
+}
+::-webkit-scrollbar-track{
+  background:transparent;
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+/*  -webkit-border-radius: 10px;
+  border-radius: 10px;*/
+}
+::-webkit-scrollbar-thumb{
+  background: #cfd8dc;
+  -webkit-box-shadow:   inset 0 1px 0 rgba(255,255,225,.5),
+                inset 1px 0 0 rgba(255,255,255,.4),
+                inset 0 1px 2px rgba(255,255,255,.3);
+   border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
